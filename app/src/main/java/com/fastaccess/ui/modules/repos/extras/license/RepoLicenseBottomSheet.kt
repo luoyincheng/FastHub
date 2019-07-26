@@ -1,7 +1,7 @@
 package com.fastaccess.ui.modules.repos.extras.license
 
 import android.os.Bundle
-import android.support.annotation.StringRes
+import androidx.annotation.StringRes
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView

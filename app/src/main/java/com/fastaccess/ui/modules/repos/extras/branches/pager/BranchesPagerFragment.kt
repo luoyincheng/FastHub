@@ -2,9 +2,9 @@ package com.fastaccess.ui.modules.repos.extras.branches.pager
 
 import android.content.Context
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.view.ViewPager
-import android.support.v7.widget.Toolbar
+import com.google.android.material.tabs.TabLayout
+import androidx.viewpager.widget.ViewPager
+import androidx.appcompat.widget.Toolbar
 import android.view.View
 import butterknife.BindView
 import com.fastaccess.R
@@ -23,7 +23,7 @@ import com.fastaccess.ui.modules.repos.extras.branches.BranchesMvp
  */
 class BranchesPagerFragment : BaseDialogFragment<BaseMvp.FAView, BasePresenter<BaseMvp.FAView>>(), BranchesPagerListener {
 
-    @BindView(R.id.pager) lateinit var pager: ViewPager
+    @BindView(R.id.pager) lateinit var pager: androidx.viewpager.widget.ViewPager
     @BindView(R.id.tabs) lateinit var tabs: TabLayout
     @BindView(R.id.toolbar) lateinit var toolbar: Toolbar
 

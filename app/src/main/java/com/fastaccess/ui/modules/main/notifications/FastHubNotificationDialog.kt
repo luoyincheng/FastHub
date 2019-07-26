@@ -1,7 +1,7 @@
 package com.fastaccess.ui.modules.main.notifications
 
 import android.os.Bundle
-import android.support.v4.app.FragmentManager
+import androidx.fragment.app.FragmentManager
 import android.view.View
 import butterknife.BindView
 import butterknife.OnClick
@@ -59,7 +59,7 @@ class FastHubNotificationDialog : BaseDialogFragment<BaseMvp.FAView, BasePresent
             return fragment
         }
 
-        fun show(fragmentManager: FragmentManager, model: FastHubNotification? = null) {
+        fun show(fragmentManager: androidx.fragment.app.FragmentManager, model: FastHubNotification? = null) {
             val notification = model ?: FastHubNotification.getLatest()
             notification?.let {
                 if (it.type == NotificationType.PROMOTION || it.type == NotificationType.PURCHASE && model == null) {
@@ -73,7 +73,7 @@ class FastHubNotificationDialog : BaseDialogFragment<BaseMvp.FAView, BasePresent
             }
         }
 
-        fun show(fragmentManager: FragmentManager) {
+        fun show(fragmentManager: androidx.fragment.app.FragmentManager) {
             show(fragmentManager, null)
         }
     }

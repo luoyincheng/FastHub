@@ -3,8 +3,8 @@ package com.fastaccess.ui.modules.login.chooser
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.CoordinatorLayout
-import android.support.transition.TransitionManager
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.transition.TransitionManager
 import android.view.View
 import android.widget.RelativeLayout
 import butterknife.BindView
@@ -33,7 +33,7 @@ class LoginChooserActivity : BaseActivity<LoginChooserMvp.View, LoginChooserPres
     @BindView(R.id.language_selector) lateinit var language_selector: RelativeLayout
     @BindView(R.id.recycler) lateinit var recycler: DynamicRecyclerView
     @BindView(R.id.multiAccLayout) lateinit var multiAccLayout: View
-    @BindView(R.id.viewGroup) lateinit var viewGroup: CoordinatorLayout
+    @BindView(R.id.viewGroup) lateinit var viewGroup: androidx.coordinatorlayout.widget.CoordinatorLayout
     @BindView(R.id.toggleImage) lateinit var toggleImage: View
 
     private val adapter = LoginAdapter()

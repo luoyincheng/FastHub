@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.support.design.widget.NavigationView
-import android.support.v4.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
+import androidx.drawerlayout.widget.DrawerLayout
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
@@ -31,7 +31,7 @@ import com.prettifier.pretty.PrettifyWebView
 class WikiActivity : BaseActivity<WikiMvp.View, WikiPresenter>(), WikiMvp.View {
 
     @BindView(R.id.wikiSidebar) lateinit var navMenu: NavigationView
-    @BindView(R.id.drawer) lateinit var drawerLayout: DrawerLayout
+    @BindView(R.id.drawer) lateinit var drawerLayout: androidx.drawerlayout.widget.DrawerLayout
     @BindView(R.id.progress) lateinit var progressbar: ProgressBar
     @BindView(R.id.stateLayout) lateinit var stateLayout: StateLayout
     @BindView(R.id.webView) lateinit var webView: PrettifyWebView

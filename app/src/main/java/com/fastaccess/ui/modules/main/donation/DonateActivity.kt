@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import com.fastaccess.BuildConfig
 import com.fastaccess.R
 import com.fastaccess.helper.*
@@ -89,7 +89,7 @@ class DonateActivity : BaseActivity<BaseMvp.FAView, BasePresenter<BaseMvp.FAView
             context.startActivityForResult(intent, BundleConstant.REQUEST_CODE)
         }
 
-        fun start(context: Fragment, product: String?, price: Long? = 0, priceText: String? = null) {
+        fun start(context: androidx.fragment.app.Fragment, product: String?, price: Long? = 0, priceText: String? = null) {
             val intent = Intent(context.context, DonateActivity::class.java)
             intent.putExtras(Bundler.start()
                     .put(BundleConstant.EXTRA, product)

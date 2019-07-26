@@ -2,7 +2,7 @@ package com.fastaccess.ui.modules.repos.extras.branches
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.widget.SwipeRefreshLayout
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import android.view.View
 import butterknife.BindView
 import com.fastaccess.R
@@ -23,7 +23,7 @@ import com.fastaccess.ui.widgets.recyclerview.scroll.RecyclerViewFastScroller
 class BranchesFragment : BaseFragment<BranchesMvp.View, BranchesPresenter>(), BranchesMvp.View {
 
     @BindView(R.id.recycler) lateinit var recycler: DynamicRecyclerView
-    @BindView(R.id.refresh) lateinit var refresh: SwipeRefreshLayout
+    @BindView(R.id.refresh) lateinit var refresh: androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     @BindView(R.id.stateLayout) lateinit var stateLayout: StateLayout
     @BindView(R.id.fastScroller) lateinit var fastScroller: RecyclerViewFastScroller
 

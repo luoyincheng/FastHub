@@ -5,9 +5,9 @@ import android.content.Intent
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.os.Handler
-import android.support.annotation.ColorInt
-import android.support.design.widget.NavigationView
-import android.support.v4.widget.DrawerLayout
+import androidx.annotation.ColorInt
+import com.google.android.material.navigation.NavigationView
+import androidx.drawerlayout.widget.DrawerLayout
 import android.text.Editable
 import android.view.Gravity
 import android.view.Menu
@@ -38,7 +38,7 @@ class TrendingActivity : BaseActivity<TrendingMvp.View, TrendingPresenter>(), Tr
     @BindView(R.id.daily) lateinit var daily: TextView
     @BindView(R.id.weekly) lateinit var weekly: TextView
     @BindView(R.id.monthly) lateinit var monthly: TextView
-    @BindView(R.id.drawer) lateinit var drawerLayout: DrawerLayout
+    @BindView(R.id.drawer) lateinit var drawerLayout: androidx.drawerlayout.widget.DrawerLayout
     @BindView(R.id.clear) lateinit var clear: View
     @BindView(R.id.searchEditText) lateinit var searchEditText: FontEditText
 

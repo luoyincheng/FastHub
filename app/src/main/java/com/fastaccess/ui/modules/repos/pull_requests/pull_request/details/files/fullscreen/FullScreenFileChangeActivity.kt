@@ -4,8 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.widget.SwipeRefreshLayout
+import androidx.fragment.app.Fragment
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -33,7 +33,7 @@ import com.fastaccess.ui.widgets.recyclerview.scroll.RecyclerViewFastScroller
 class FullScreenFileChangeActivity : BaseActivity<FullScreenFileChangeMvp.View, FullScreenFileChangePresenter>(), FullScreenFileChangeMvp.View {
 
     @BindView(R.id.recycler) lateinit var recycler: DynamicRecyclerView
-    @BindView(R.id.refresh) lateinit var refresh: SwipeRefreshLayout
+    @BindView(R.id.refresh) lateinit var refresh: androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     @BindView(R.id.stateLayout) lateinit var stateLayout: StateLayout
     @BindView(R.id.fastScroller) lateinit var fastScroller: RecyclerViewFastScroller
     @BindView(R.id.changes) lateinit var changes: TextView
@@ -164,7 +164,7 @@ class FullScreenFileChangeActivity : BaseActivity<FullScreenFileChangeMvp.View, 
 
     companion object {
         val FOR_RESULT_CODE = 1002
-        fun startActivityForResult(fragment: Fragment, model: CommitFileChanges, position: Int, isCommit: Boolean = false) {
+        fun startActivityForResult(fragment: androidx.fragment.app.Fragment, model: CommitFileChanges, position: Int, isCommit: Boolean = false) {
             val intent = Intent(fragment.context, FullScreenFileChangeActivity::class.java)
             intent.putExtras(Bundler.start()
                     .put(BundleConstant.EXTRA, model)

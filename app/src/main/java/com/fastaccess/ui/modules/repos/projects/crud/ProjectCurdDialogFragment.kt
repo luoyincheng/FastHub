@@ -3,8 +3,8 @@ package com.fastaccess.ui.modules.repos.projects.crud
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.FragmentManager
-import android.support.v7.widget.Toolbar
+import androidx.fragment.app.FragmentManager
+import androidx.appcompat.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -86,7 +86,7 @@ class ProjectCurdDialogFragment : BaseDialogFragment<BaseMvp.FAView, BasePresent
 
     override fun getEditText(): EditText = editText
 
-    override fun fragmentManager(): FragmentManager = childFragmentManager
+    override fun fragmentManager(): androidx.fragment.app.FragmentManager = childFragmentManager
 
     override fun getSavedText(): CharSequence? = editText.savedText
 

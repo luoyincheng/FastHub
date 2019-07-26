@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.NavigationView
+<com.google.android.material.navigation.NavigationView
     android:id="@+id/menusHolder"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,7 +11,7 @@
     app:itemIconTint="@color/search_tab_highlighter"
     app:itemTextColor="@color/search_tab_highlighter">
 
-    <android.support.design.widget.NavigationView
+    <com.google.android.material.navigation.NavigationView
         android:id="@+id/extrasNav"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -25,7 +25,7 @@
         app:itemTextColor="@color/search_tab_highlighter"
         app:menu="@menu/drawer_menu"/>
 
-    <android.support.design.widget.NavigationView
+    <com.google.android.material.navigation.NavigationView
         android:id="@+id/accountsNav"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -43,6 +43,6 @@
 
         <include layout="@layout/accounts_menu_layout"/>
 
-    </android.support.design.widget.NavigationView>
+    </com.google.android.material.navigation.NavigationView>
 
-</android.support.design.widget.NavigationView>
+</com.google.android.material.navigation.NavigationView>

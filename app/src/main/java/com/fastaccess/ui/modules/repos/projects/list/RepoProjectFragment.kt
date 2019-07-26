@@ -2,8 +2,8 @@ package com.fastaccess.ui.modules.repos.projects.list
 
 import android.content.Context
 import android.os.Bundle
-import android.support.annotation.StringRes
-import android.support.v4.widget.SwipeRefreshLayout
+import androidx.annotation.StringRes
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import android.view.View
 import butterknife.BindView
 import com.fastaccess.R
@@ -26,7 +26,7 @@ import github.RepoProjectsOpenQuery
 class RepoProjectFragment : BaseFragment<RepoProjectMvp.View, RepoProjectPresenter>(), RepoProjectMvp.View {
 
     @BindView(R.id.recycler) lateinit var recycler: DynamicRecyclerView
-    @BindView(R.id.refresh) lateinit var refresh: SwipeRefreshLayout
+    @BindView(R.id.refresh) lateinit var refresh: androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     @BindView(R.id.stateLayout) lateinit var stateLayout: StateLayout
     @BindView(R.id.fastScroller) lateinit var fastScroller: RecyclerViewFastScroller
     private var onLoadMore: OnLoadMore<IssueState>? = null

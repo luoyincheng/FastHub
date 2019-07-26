@@ -2,7 +2,7 @@ package com.fastaccess.ui.adapter.viewholder
 
 import android.annotation.SuppressLint
 import android.graphics.Color
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.text.style.BackgroundColorSpan
 import android.view.View
 import android.view.ViewGroup

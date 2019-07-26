@@ -2,7 +2,7 @@ package com.fastaccess.ui.modules.repos.git.delete
 
 import android.content.Context
 import android.os.Bundle
-import android.support.design.widget.TextInputLayout
+import com.google.android.material.textfield.TextInputLayout
 import android.view.View
 import butterknife.BindView
 import butterknife.OnClick

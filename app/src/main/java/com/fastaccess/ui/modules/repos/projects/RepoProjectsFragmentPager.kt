@@ -1,7 +1,7 @@
 package com.fastaccess.ui.modules.repos.projects
 
 import android.os.Bundle
-import android.support.design.widget.TabLayout
+import com.google.android.material.tabs.TabLayout
 import android.view.View
 import butterknife.BindView
 import com.fastaccess.R

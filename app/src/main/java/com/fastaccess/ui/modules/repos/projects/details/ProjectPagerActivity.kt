@@ -3,7 +3,7 @@ package com.fastaccess.ui.modules.repos.projects.details
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.ViewPager
 import android.view.MenuItem
 import android.view.View
 import butterknife.BindView
@@ -27,7 +27,7 @@ import com.fastaccess.ui.widgets.CardsPagerTransformerBasic
 
 class ProjectPagerActivity : BaseActivity<ProjectPagerMvp.View, ProjectPagerPresenter>(), ProjectPagerMvp.View {
 
-    @BindView(R.id.pager) lateinit var pager: ViewPager
+    @BindView(R.id.pager) lateinit var pager: androidx.viewpager.widget.ViewPager
     @BindView(R.id.loading) lateinit var loading: LottieAnimationView
     @State var isProgressShowing = false
 

@@ -5,8 +5,8 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.transition.TransitionManager
-import android.support.v4.app.FragmentManager
+import androidx.transition.TransitionManager
+import androidx.fragment.app.FragmentManager
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
@@ -116,7 +116,7 @@ class CommentEditorFragment : BaseFragment<BaseMvp.FAView, BasePresenter<BaseMvp
 
     override fun getEditText(): EditText = commentText
 
-    override fun fragmentManager(): FragmentManager = childFragmentManager
+    override fun fragmentManager(): androidx.fragment.app.FragmentManager = childFragmentManager
 
     override fun getSavedText(): CharSequence? = commentText.savedText
 

@@ -1,9 +1,9 @@
 package com.fastaccess.ui.widgets
 
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.ViewPager
 import android.view.View
 
-class CardsPagerTransformerBasic(private val baseElevation: Int, private val raisingElevation: Int) : ViewPager.PageTransformer {
+class CardsPagerTransformerBasic(private val baseElevation: Int, private val raisingElevation: Int) : androidx.viewpager.widget.ViewPager.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val absPosition = Math.abs(position)
         if (absPosition >= 1) {

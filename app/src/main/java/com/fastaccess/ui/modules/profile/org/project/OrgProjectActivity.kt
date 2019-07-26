@@ -3,7 +3,7 @@ package com.fastaccess.ui.modules.profile.org.project
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout
 import butterknife.BindView
 import com.evernote.android.state.State
 import com.fastaccess.R

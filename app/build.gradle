@@ -167,7 +167,8 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.10.3'
     implementation "com.evernote:android-state:${state_version}"
     implementation "petrov.kristiyan:colorpicker-library:1.1.4"
-    implementation 'com.apollographql.apollo:apollo-rx2-support:0.4.1'
+    implementation 'com.apollographql.apollo:apollo-runtime:1.0.0'
+    implementation "com.apollographql.apollo:apollo-android-support:1.0.0"
     implementation 'com.jaredrummler:android-device-names:1.1.5'
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
     implementation 'com.airbnb.android:lottie:2.2.5'
